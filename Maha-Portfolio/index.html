@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maha Ali | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="home">
+        <div class="header-image">
+            <div class="hero-text">
+                <h1>MAHA ALI</h1>
+                <p class="role">Web Developer | <span id="typed"></span><span class="cursor">|</span></p>
+            </div>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- About -->
+        <section id="about" class="reveal">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-img">
+                    <img src="images/profile.jpg" alt="Maha Ali"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <i class="fas fa-code" style="display:none;"></i>
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm Maha Ali, a passionate web developer who loves turning ideas into clean,
+                       responsive and good-looking websites.</p>
+                    <p>I work with HTML, CSS, JavaScript and WordPress, and I also write programs in C++ and Java.
+                       I enjoy learning new things and building projects that solve real problems.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="reveal">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-wordpress"></i>
+                    <h3>CMS</h3>
+                    <p>WordPress</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-terminal"></i>
+                    <h3>Programming</h3>
+                    <p>C++, Java</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-github"></i>
+                    <h3>Tools</h3>
+                    <p>Git, GitHub</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="reveal">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <div class="project-img"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="project-info">
+                        <h3>Velora E-Commerce Website</h3>
+                        <p>An online shopping website built with HTML, CSS and JavaScript with a clean, responsive design.</p>
+                        <a href="#" class="btn small" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-img"><i class="fas fa-store"></i></div>
+                    <div class="project-info">
+                        <h3>Mart System (C++)</h3>
+                        <p>A console-based mart management system written in C++ to manage products and billing.</p>
+                        <a href="#" class="btn small" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume -->
+        <section id="resume" class="reveal">
+            <h2>Resume</h2>
+            <div class="resume-box">
+                <p>Want to know more about my education and skills? Download my CV.</p>
+                <a href="resume/Maha-Ali-CV.pdf" class="btn" download>
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="reveal">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <p>mahaali.dev@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <p><a href="https://github.com/itsMahaAli" target="_blank">github.com/itsMahaAli</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <p><a href="https://www.linkedin.com/in/maha-ali-733b38404" target="_blank">LinkedIn Profile</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-image">
+            <h2>LET'S BUILD SOMETHING AMAZING</h2>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/itsMahaAli" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/maha-ali-733b38404" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:mahaali.dev@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="copyright">© 2026 Maha Ali. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
